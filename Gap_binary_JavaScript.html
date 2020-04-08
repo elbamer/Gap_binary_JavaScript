@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // var binario = "10010";
+
+      function binary(binario) {
+        var conta_unos = 0;
+        var max_count = 0;
+        var left_uno = 0;
+        var current_zeros = 0;
+        for (var i = 1; i < binario.length; i++) {
+          if (binario[i] === "1") {                    
+            current_zeros = i -1- left_uno;
+           // console.log("cantidad de ceros " + (ceros - 1));
+           if( current_zeros > max_count){// en la primera iteracion es cero , esta inicializado a cero asi si me pasa solo unos me retorna cero
+                max_count=current_zeros;// guardo en maxcount los ceros actuales 
+           }
+            
+            left_uno = i;
+            /* if(max_count<current_zeros){
+              return max_count;
+               console.log(max_count);
+          }*/
+          }
+        }console.log(max_count);
+      }
+      binary("1111");
+    </script>
+  </head>
+  <body></body>
+</html>

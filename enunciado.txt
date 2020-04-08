@@ -1,0 +1,20 @@
+
+
+
+Un gap binario es una secuencia consecutiva maxima de 0 que esten rodeados de 1
+en ambos lados.
+
+Por ejemplo, 1001 contiene un gap binario de 2.
+1000010001 contiene dos gap binarios uno de longitud 4 y otro de longitud 3.
+El 10100 contine un gap binario de longitud 1.
+El 1111 no contiene ningun gap binario y
+100000 no tiene gap binario.
+**********************ENUNCIADO*************
+
+Escribir una función que recibe un string N, por ejemplo "1000100"
+    function solution(N);
+
+Por ejemplo:
+"10000010001" debe retornar 5.
+"1000010001" debe retornar 4.
+"1000" debe retornar 0.
